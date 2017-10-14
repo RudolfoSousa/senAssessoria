@@ -1,0 +1,588 @@
+html{
+    font-family: 'Asap', sans-serif;
+    overflow-x: hidden;
+}
+body{
+    height: 100%;
+}
+header{
+    background-color: #f0f0f0;
+    width: 100%;
+    box-shadow: 0 .1rem 1rem grey;
+    z-index: 1;
+}
+.fixo{
+    position: fixed;
+    top: 0;
+}
+.menu-principal,
+.logo{
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+    background-color: grey;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+.logo p{
+    text-indent: -9999px;
+}
+.logo{
+    width: 8%;
+    max-height: 50px;
+    min-height: 36px;
+    margin: 1rem 1rem;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+}
+.menu-nav li{
+    float: left;
+}
+.menu-nav a{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 2rem;
+    padding: 1.5rem;
+    transition: text-shadow .2s linear;
+}
+.menu-nav a:hover,
+.menu-nav a:focus{
+    text-shadow: .1rem .1rem .2rem grey;
+    box-shadow: .1rem .1rem .2rem grey;
+    cursor: pointer;
+}
+.destaque{
+    text-shadow: .1rem .1rem .2rem grey;
+    box-shadow: .1rem .1rem .2rem grey;
+}
+.container{
+    height: 100%;
+    width: 100%;
+}
+.empresa,
+.missao,
+.visao{
+    width: 90%;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5rem 0;
+}
+.flex p{
+    width: 49%;
+    text-align: left;
+    font-size: 160%;
+    line-height: 2.5rem;
+}
+.titulo-empresa{
+    width: 49%;
+    min-height: 200px;
+    max-height: 200px;
+    text-align: center;
+}
+.titulo-empresa h1{
+    position: relative;
+    font-size: 400%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#botao-historia{
+    background-color: rgb(0, 114, 200);
+    border: 0;
+    width: 30%;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    position: relative;
+    left: 50%;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: .3s linear;
+}
+#botao-historia:hover,
+#botao-historia:focus{
+    background-color: blue;
+    color: white;
+}
+#historia-empresa{
+    width: 70%;
+    margin: 3rem auto;
+    line-height: 1.5rem;
+    font-size: 120%;
+    display: none;
+    padding: 1rem;
+}
+.paralax{
+    background-image: url(../img/org-1050x500-min.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    box-shadow: .1rem .1rem 90px inset;
+}
+.titulo-missao h1,
+.agenda h1{
+    font-size: 400%;
+}
+.agenda h1{
+    margin: 5rem auto;
+}
+.titulo-missao{
+    order: 2;
+}
+.missao{
+    margin: 16rem auto;
+}
+.valores{
+    background-image: url(../img/valores.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: .1rem .1rem 20px gray inset;
+    min-height: 650px;
+    max-height: 650px;
+    width: 100%;
+    position: relative;
+}
+.valores h1{
+    font-size: 400%;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.espacamento-valores{
+    width: 90%;
+    margin: 0 auto;
+}
+.valores-posicao li{
+    float: left;
+    padding: 1rem;
+    margin-right: 1rem;
+    font-size: 130%;
+    text-transform: uppercase;
+    transition: .5s linear;
+}
+.valores-posicao{
+    position: absolute;
+    top: 50%;
+}
+.aumenta{
+    background-color: rgba(0, 0, 0, .5);
+    color: rgba(255,255,255,.8);
+}
+.titulo-visao h1{
+     font-size: 400%;
+}
+.visao{
+    margin: 17rem auto; 
+}
+.servicos h1{
+    font-size: 400%;
+    text-align: center;
+    padding: 4rem
+}
+.servicos{
+    background-color: #4169E1;
+    position: relative;
+    padding-bottom: 10rem;
+}
+.servicos:after {
+    content:" ";
+    display: inline-block;
+    max-width: 150px;
+    min-width: 150px;
+    max-height:150px;
+    min-height:150px;
+    background: white;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.flex-servicos li{
+    width: 60%;
+    margin: .5rem auto;
+    padding: 1rem;
+    text-align: center;
+    font-size: 130%;
+    text-transform: uppercase;
+    background-color: #B0E0E6;
+    border-radius: 2rem;
+}
+.flex-servicos li:hover{
+    cursor: pointer;
+}
+.flex-servicos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.explicacao p{
+    background-color: #E0FFFF;
+    border-radius: 2rem;
+    font-size: 90%;
+    text-transform: none;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+.explicacao{
+    margin: 2rem auto;
+    display: none;
+}
+.agenda{
+    width: 50%;
+    margin: 7rem auto;
+}
+footer{
+    width: 100%;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+}
+.footer{
+    display: block;
+    width: 50%;
+    margin: 2rem 0;
+    vertical-align: middle;
+}
+.footer li{
+    padding-top: 1rem;
+    font-size: 80%;
+}
+.flex-footer li{
+    margin-top: 1rem;
+    font-size: 90%;
+}
+.icones-sociais a{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    text-indent: -9999px;
+}
+.icones-sociais li{
+    display: inline-block;
+    margin-left: 5rem;
+}
+.icones-sociais{
+    padding: 3rem 0; 
+}
+.facebook{
+    background-image: url(../img/facebook.png);
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+}
+.instagram{
+    background-image: url(../img/instagram.png);
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+}
+.linkedin{
+    background-image: url(../img/linkedin.png);
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+}
+.geral{
+    display: flex;
+    vertical-align: middle;
+}
+footer p{
+    font-size: 150%;
+}
+input{
+    display: block;
+    font-size: 80%;
+    width: 30%;
+    margin-bottom: 2rem;
+}
+textarea{
+    display: block;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+}
+fieldset{
+    width: 50%;
+}
+.assunto{
+    padding-left: 9rem;
+}
+#enviar{
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    background-color: rgb(0, 114, 200);
+    border: 0;
+    cursor: pointer;
+}
+.valores-item{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/*Controle Responsivo*/
+@media (max-width:800px){
+    #historia-empresa{
+        width: 100%;
+    }
+    .historia{
+        width: 100%;
+    }
+    input{
+    display: block;
+    font-size: 80%;
+    width: 90%;
+    margin-bottom: 2rem;
+}
+textarea{
+    display: block;
+}
+.form{
+    display: block;
+    justify-content: space-between;
+}
+fieldset{
+    width: 100%;
+}
+.assunto{
+    padding-left: 0;
+    width: 90%;
+    margin: 0 auto;
+}
+    .paralax{
+    background-image: url(../img/Sem%20T%C3%ADtulo-1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: 100% 100%;
+    width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    box-shadow: .1rem .1rem 90px inset;
+}
+.valores{
+    background-image: url(../img/valores.jpg);
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: 100% 100%;
+    box-shadow: .1rem .1rem 20px gray inset;
+    width: 100%;
+    position: relative;
+}
+    .logo{
+        width: 15%;
+        max-height: 50px;
+        min-height: 50px;
+    }
+    .flex{
+        display: block;
+    }
+    .flex p{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    .caixa-flex{
+        width: 100%;
+    }
+    .caixa-flex p{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .form-assunto{
+        width: 80%;
+    }
+    .espaco-form{
+        display: block;
+    }
+    .titulo-empresa h1{
+        font-size: 200%;
+    }
+    .titulo-empresa{
+        height: 0;
+    }
+    .flex p{
+        font-size: 110%;
+    }
+    .flex{
+        display: block;
+    }
+    #botao-historia{
+        width: 100%;
+    }
+    .titulo-missao h1{
+        font-size: 200%;
+    }
+    .titulo-missao{
+        margin: 7rem auto;
+    }
+    .missao{
+        margin: 0 auto;
+    }
+    .valores h1{
+        font-size: 200%;
+    }
+    .valores-posicao li{
+        display: block;
+        width: 85%;
+        text-align: center;
+        margin: 0;
+    }
+    .visao{
+        margin: 0 auto;
+    }
+    .titulo-visao h1{
+        font-size: 200%;
+        margin: 7rem auto;
+    }
+    .explicacao{
+        width: 100%;
+        margin: 1rem auto;
+    }
+    .explicacao p{
+        font-size: 75%;
+        padding: .5rem;
+    }
+    .servicos h1{
+        font-size: 200%;
+    }
+    
+    .container{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+        
+    }
+    .agenda{
+    width: 90%;
+    margin: 5rem auto;
+}
+    .agenda h1{
+        font-size: 200%;
+    }
+    footer{
+        width: 96%;
+        padding: 1rem;
+        margin: 0;
+    }
+    footer p{
+        font-size: 150%;
+    }
+    .geral{
+        display: block;
+    }
+    .flex-footer{
+        display: block;
+    }
+    .icones-sociais li{
+        display: inline-block;
+        margin-left: 1rem;
+    }
+    .icones-sociais{
+        padding: 1rem;
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .menu-principal li{
+        float: none;
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+    .menu-principal a{
+        padding: 1rem 6rem;
+        margin: 0;
+    }
+    .menu-nav{
+        width: 85%;
+        height: 100%;
+        background-color: #f0f0f0;
+        position: fixed;
+        top: 0;
+        left: -90%;
+        z-index: 1;
+        transition: left 0.3s linear;
+    }
+    .menu-ativo .menu-nav{
+        left: 0;
+    }
+    .menu-ativo:after{
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.4);
+    }
+}
+@media not all and (max-width:800px){
+    .menu-abrir,
+    .menu-fechar{
+        display: none;
+    }
+}
+.menu-abrir,
+.menu-fechar {
+    background: none;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    font-size: 1.6em;
+    text-indent: -999em;
+}
+.menu-abrir {
+    height: 0;
+    width: .1rem;
+    padding-top:.125em;
+    border-top: .375em double #000;
+    border-bottom: .125em solid #000;
+    vertical-align: middle;
+    margin: 0.5em;    
+}
+.menu-fechar {
+    position: relative;
+    top: 1rem;
+    left: 2rem;
+    height: 1em;
+    width: 1em;
+}
+ .menu-fechar:before {
+        content: '\00D7';
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-indent: 0;
+    }
