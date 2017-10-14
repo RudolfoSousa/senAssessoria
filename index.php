@@ -22,7 +22,7 @@
                     <nav class="menu-nav">
                         <button class="menu-fechar">Fecha Menu</button>
                         <ul class="menu-principal">
-                            <li><a id="empresa-menu">A Empresa</a></li>
+                            <li><a id="empresa-menu">Empresa</a></li>
                             <li><a id="missao-menu">Missão</a></li>
                             <li><a id="valores-menu">Valores</a></li>
                             <li><a id="visao-menu">Visão</a></li>
